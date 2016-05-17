@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sfp><foot><output><parameter><name>x</name><type>integer</type><timeStamp>n</timeStamp></parameter>
+	</output>
+	<input>
+		<parameter>
+			<name>a</name>
+			<type>integer</type>
+			<timeStamp>n</timeStamp>
+			<resource>setable</resource>
+		</parameter>
+		<parameter>
+			<name>y</name>
+			<type>integer</type>
+			<timeStamp>n</timeStamp>
+			<resource>bar</resource>
+		</parameter>
+	</input>
+</foot>
+<bar>
+	<output>
+		<name>y</name>
+		<type>integer</type>
+		<timeStamp>n</timeStamp>
+	</output>
+	<input>
+		<parameter>
+			<name>b</name>
+			<type>integer</type>
+			<timeStamp>n</timeStamp>
+			<resource>setable</resource>
+		</parameter>
+		<parameter>
+			<name>y</name>
+			<type>integer</type>
+			<timeStamp>n-1</timeStamp>
+			<resource>bar</resource>
+		</parameter>
+		<parameter>
+			<name>z</name>
+			<type>integer</type>
+			<timeStamp>n</timeStamp>
+			<resource>baz</resource>
+		</parameter>
+	</input>
+</bar>
+
+<baz>
+	<output>
+		<name>z</name>
+		<type>integer</type>
+		<timeStamp>n</timeStamp>
+	</output>
+	<input>
+		<parameter>
+			<name>x</name>
+			<type>integer</type>
+			<timeStamp>n-1</timeStamp>
+			<resource>foo</resource>
+		</parameter>
+		<parameter>
+			<name>c</name>
+			<type>integer</type>
+			<timeStamp>n</timeStamp>
+			<resource>setable</resource>
+		</parameter>
+	</input>
+</baz>
+</sfp>
