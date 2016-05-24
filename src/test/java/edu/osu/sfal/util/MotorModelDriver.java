@@ -30,7 +30,7 @@ import java.util.concurrent.ExecutionException;
  * <p/>
  * This requires that an SFAL with connected weather model is already running.
  */
-public class WeatherModelDriver {
+public class MotorModelDriver {
 
 	private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	private static final String
